@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="Parent">
+        <img src="media/image.jpg" alt="" class="clMedia">
+        <div action="#" method="get" id="mainform">
+            <p>Choose a username</p>
+            <input type="text" class="Username" placeholder="Choose a Username" name="alias" autocomplete="off"><br>
+            <button class="btn">Join</button>
+        </div>
+    </div>
+
+    <div class="pointer"><h2>Friendly Chatroom</h2></div>
+    <div class="mainbox">
+    </div>
+    <div class="msgarea" id="form">
+        <input type="text" class="messagewrt" placeholder="Please be Respectful" autocomplete="off">
+        <button type="submit" class="send">Send</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
